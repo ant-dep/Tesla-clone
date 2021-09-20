@@ -19,9 +19,9 @@ https://netflix-clone-1fbfc.web.app
 
 <h2>Features</h2></br>
 
-👉 <em>React</em> hooks</br>
+👉 <em>React</em> hooks and styled components</br>
 👉 <em>React</em>redux</br>
-👉 <em>React</em> styled components</br>
+👉 <em>React</em> reveal effects</br>
 👉 <em>Material-UI</em> icons</br>
 👉 <em>Firebase</em> hosting
 
