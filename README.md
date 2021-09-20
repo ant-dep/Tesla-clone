@@ -3,7 +3,7 @@
 <hr class="line"></br>
 
 👇 <em>Result here</em>👇 </br>
-https://netflix-clone-1fbfc.web.app
+https://tesla-clone-ebcea.web.app
 
 </br></br></br></br>
 
@@ -20,7 +20,7 @@ https://netflix-clone-1fbfc.web.app
 <h2>Features</h2></br>
 
 👉 <em>React</em> hooks and styled components</br>
-👉 <em>React</em>redux</br>
+👉 <em>React</em> redux store</br>
 👉 <em>React</em> reveal effects</br>
 👉 <em>Material-UI</em> icons</br>
 👉 <em>Firebase</em> hosting

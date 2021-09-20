@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { selectCars } from "../features/car/carSlice.js";
 import { useSelector } from "react-redux";
@@ -25,7 +24,9 @@ function Header() {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Account</a>
-        <CustomMenu onClick={() => setBurgerStatus(true)}>Menu</CustomMenu>
+        <CustomMenu onClick={() => setBurgerStatus(true)}>
+          <p>Menu</p>
+        </CustomMenu>
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
@@ -79,6 +80,12 @@ function Header() {
         <li>
           <a href="#">Investor Relations</a>
         </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
       </BurgerNav>
     </Container>
   );
@@ -106,12 +113,12 @@ const Menu = styled.div`
   flex: 1;
   a {
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 0 10px;
+    font-size: 18px;
+    padding: 0 20px;
     flex-wrap: nowrap;
     text-decoration: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
@@ -121,18 +128,25 @@ const RightMenu = styled.div`
   align-items: center;
   a {
     font-weight: 600;
-    text-transform: uppercase;
-    margin-right: 10px;
+    font-size: 18px;
     text-decoration: none;
+    padding-right: 25px;
+  }
+  @media (max-width: 1200px) {
+    a {
+      display: none;
+    }
   }
 `;
 
 const CustomMenu = styled.div`
   cursor: pointer;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0 10px;
+  padding-right: 15px;
   flex-wrap: nowrap;
+  p {
+    font-weight: 600;
+    font-size: 18px;
+  }
 `;
 
 const BurgerNav = styled.div`
@@ -141,10 +155,11 @@ const BurgerNav = styled.div`
   bottom: 0;
   right: 0;
   background: white;
-  width: 300px;
+  width: 350px;
   z-index: 100;
   list-style: none;
   padding: 20px;
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -152,15 +167,17 @@ const BurgerNav = styled.div`
   transition: transform 0.3s;
   li {
     padding: 15px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     a {
       font-weight: 600;
+      text-decoration: none;
     }
   }
 `;
 
 const CustomClose = styled(CloseIcon)`
   cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 20px;
 `;
 
 const CloseWrapper = styled.div`
