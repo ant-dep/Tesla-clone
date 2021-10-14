@@ -64,14 +64,17 @@ const Buttons = styled.div``;
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
+
   @media (max-width: 768px) {
     flex-direction: column;
+    margin: 0;
   }
 `;
 const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
   height: 40px;
-  width: 256px;
+  width: 25em;
+  margin: 0 0.5em;
   color: white;
   display: flex;
   justify-content: center;
@@ -81,6 +84,10 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    margin: 0.5em 0;
+  }
 `;
 const RightButton = styled(LeftButton)`
   background: white;

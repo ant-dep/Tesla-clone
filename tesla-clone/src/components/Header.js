@@ -10,20 +10,20 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="/">
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="#">
+            <a key={index} href="/">
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Account</a>
+        <a href="/">Shop</a>
+        <a href="/">Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)}>
           <p>Menu</p>
         </CustomMenu>
@@ -35,56 +35,56 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li key={index}>
-              <a href="#">{car}</a>
+              <a href="/">{car}</a>
             </li>
           ))}
         <li>
-          <a href="#">Existing Inventory</a>
+          <a href="/">Existing Inventory</a>
         </li>
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="/">Used Inventory</a>
         </li>
         <li>
-          <a href="#">Trade-in</a>
+          <a href="/">Trade-in</a>
         </li>
         <li>
-          <a href="#">Test Drive</a>
+          <a href="/">Test Drive</a>
         </li>
         <li>
-          <a href="#">Cybertruck</a>
+          <a href="/">Cybertruck</a>
         </li>
         <li>
-          <a href="#">Roadster</a>
+          <a href="/">Roadster</a>
         </li>
         <li>
-          <a href="#">Semi</a>
+          <a href="/">Semi</a>
         </li>
         <li>
-          <a href="#">Charging</a>
+          <a href="/">Charging</a>
         </li>
         <li>
-          <a href="#">Powerwall</a>
+          <a href="/">Powerwall</a>
         </li>
         <li>
-          <a href="#">Commercial Energy</a>
+          <a href="/">Commercial Energy</a>
         </li>
         <li>
-          <a href="#">Utilities</a>
+          <a href="/">Utilities</a>
         </li>
         <li>
-          <a href="#">Find Us</a>
+          <a href="/">Find Us</a>
         </li>
         <li>
-          <a href="#">Support</a>
+          <a href="/">Support</a>
         </li>
         <li>
-          <a href="#">Investor Relations</a>
+          <a href="/">Investor Relations</a>
         </li>
         <li>
-          <a href="#">Shop</a>
+          <a href="/">Shop</a>
         </li>
         <li>
-          <a href="#">Account</a>
+          <a href="/">Account</a>
         </li>
       </BurgerNav>
     </Container>
@@ -163,6 +163,7 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  overflow: scroll;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.3s;
   li {

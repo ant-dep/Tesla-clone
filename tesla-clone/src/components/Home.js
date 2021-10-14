@@ -13,9 +13,9 @@ function Home() {
         rightBtnText="Existing inventory"
       />
       <Section
-        title="Model Y"
+        title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-y.jpg"
+        backgroundImg="model-x.jpg"
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
@@ -27,9 +27,9 @@ function Home() {
         rightBtnText="Existing inventory"
       />
       <Section
-        title="Model X"
+        title="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-x.jpg"
+        backgroundImg="model-y.jpg"
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
