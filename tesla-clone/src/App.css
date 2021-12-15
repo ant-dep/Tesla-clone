@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .app {
   text-align: center;
 }
