@@ -112,11 +112,16 @@ const Menu = styled.div`
   justify-content: center;
   flex: 1;
   a {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
-    padding: 0 20px;
+    padding: 5px 20px;
     flex-wrap: nowrap;
     text-decoration: none;
+    transition: 0.5s ease-in-out;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
   }
   @media (max-width: 1200px) {
     display: none;
@@ -127,10 +132,15 @@ const RightMenu = styled.div`
   display: flex;
   align-items: center;
   a {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     text-decoration: none;
-    padding-right: 25px;
+    padding: 5px 20px;
+    transition: 0.5s ease-in-out;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
   }
   @media (max-width: 1200px) {
     a {
@@ -141,12 +151,18 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled.div`
   cursor: pointer;
-  padding-right: 15px;
   flex-wrap: nowrap;
   p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
+    padding: 5px 20px;
+    transition: 0.5s ease-in-out;
   }
+}
+p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
 `;
 
 const BurgerNav = styled.div`
